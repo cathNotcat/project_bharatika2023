@@ -1,0 +1,363 @@
+@font-face {
+  font-family: 'Base Neue Condensed Extra Bold';
+  src: url('../fonts/BaseNeueTrial-Bold.ttf');
+}
+
+* {
+  font-family: 'Base Neue Condensed Extra Bold', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fbe5dd;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(to right, #3f1948, #18162c);
+}
+
+.module-wrapper {
+  position: relative;
+  background: linear-gradient(to bottom, #e38a8c, #3e1e48);
+  border-radius: 50px;
+  padding: 3px;
+}
+
+.isi {
+  border-radius: 50px;
+  background: linear-gradient(to bottom, #3d173e, #591630);
+}
+
+.input-wrapper {
+  position: relative;
+  margin-bottom: 10px;
+  margin-top: 32px;
+  width: 100%;
+  background: linear-gradient(to bottom right, #f8827d, #3c1b40);
+  border-radius: 10px;
+  padding: 2px;
+}
+
+div.inputbox {
+  display: flex;
+  background: linear-gradient(90deg, #991224, #431839, #381434);
+  border-radius: 10px;
+}
+
+.inputbox label {
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  transform: translateY(-50%);
+  transition: 0.5s ease-in;
+}
+
+.col-12 .inputbox label {
+  left: 14%;
+}
+
+.inputbox:focus-within label,
+input:not(:placeholder-shown) + label {
+  top: -20px;
+  left: 0;
+}
+
+.col-12 input:not(:placeholder-shown) + label {
+  top: -20px;
+  left: 0;
+}
+
+.tulisan {
+  display: flex;
+  width: max-content;
+  margin-inline: auto;
+  letter-spacing: 0.1em;
+  font-style: italic;
+}
+
+.tulisan h1 > span {
+  font-style: normal;
+  margin-left: 3px;
+  margin-right: -6px;
+}
+
+::placeholder {
+  color: #fafad3;
+  /* Firefox */
+}
+
+h1 {
+  color: #fff3dd;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #fafad3;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #fafad3;
+}
+
+.inputbox input {
+  flex: 20;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 8px;
+  color: #fff;
+  max-width: 95%;
+  padding-block: 12.5px;
+}
+
+.col-12 .inputbox input {
+  flex: 10;
+}
+
+button.register {
+  width: 100%;
+  padding: 8px;
+  border-radius: 10px !important;
+  /* height: 60px; */
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  background: linear-gradient(to right, #f6ab36, #e9652e, #df1825);
+  color: white;
+  padding: 0 !important;
+}
+
+.register:hover:not([disabled]) > h3 {
+  color: #ffcea8;
+}
+
+div.icon {
+  flex: 1;
+  top: 50%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.col-12 .inputbox .icon {
+  flex: 1;
+}
+
+.inputbox ion-icon {
+  color: #fafad3;
+  font-size: 1.4em;
+  transition: 0.2s;
+  pointer-events: none;
+}
+
+.inputbox:focus-within ion-icon {
+  filter: drop-shadow(5px 5px 30px black);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+h3 {
+  margin: 0 !important;
+  transition: 0.5s;
+}
+
+.d-flex a {
+  transition: 0.3s;
+  color: #feefe7;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.d-flex a:hover {
+  scale: 1.2;
+}
+
+.loading {
+  position: relative;
+}
+
+.loading h2 {
+  position: relative;
+  left: -40px;
+}
+
+.circle {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #fff;
+  left: 55%;
+  top: 25px;
+  transform-origin: 50%;
+  animation: circle 0.8s alternate infinite ease;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield; /* Firefox */
+}
+@keyframes circle {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.circle:nth-child(2) {
+  left: 60%;
+  animation-delay: 0.2s;
+}
+
+.circle:nth-child(3) {
+  left: 65%;
+  animation-delay: 0.3s;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #fafad3 !important;
+}
+
+@media screen and (max-width: 991px) {
+  button.register {
+    height: 40px;
+  }
+  div.inputbox {
+    padding-left: 3px;
+  }
+  .inputbox label,
+  .col-12 .inputbox label {
+    left: 8%;
+  }
+  .circle {
+    top: 20px;
+  }
+
+  .col-12 .inputbox input {
+    flex: 20;
+  }
+
+  .col-12 .inputbox:focus-within label {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 767.19px) {
+  div.icon,
+  .col-12 div.icon {
+    flex: 1.5 !important;
+  }
+
+  .inputbox label,
+  .col-12 .inputbox label {
+    left: 11%;
+  }
+}
+
+@media screen and (max-width: 575.19px) {
+  div.icon,
+  .col-12 div.icon {
+    flex: 2 !important;
+  }
+
+  .inputbox label,
+  .col-12 .inputbox label {
+    left: 13%;
+  }
+}
+
+@media screen and (max-width: 445.6px) {
+  .inputbox label,
+  .col-12 .inputbox label {
+    left: 14%;
+  }
+  .inputbox ion-icon {
+    font-size: 1.2em;
+  }
+
+  .tulisan h1 > span {
+    margin-right: -5px;
+  }
+}
+@media screen and (max-width: 390px) {
+  div.icon,
+  .col-12 div.icon {
+    flex: 3 !important;
+  }
+
+  .inputbox ion-icon {
+    font-size: 1em;
+  }
+
+  .inputbox label,
+  .col-12 .inputbox label {
+    left: 16%;
+    font-size: 0.85em;
+  }
+
+  a.login {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 345.9px) {
+  .inputbox label,
+  .col-12 .inputbox label {
+    left: 19%;
+  }
+
+  a.login {
+    font-size: 0.95em;
+  }
+}
+@media screen and (max-width: 300px) {
+  .inputbox label {
+    font-size: 0.8em;
+  }
+
+  .inputbox label,
+  .col-12 .inputbox label {
+    left: 24%;
+  }
+}
+
+@media (min-width: 992px) {
+  .module-wrapper {
+    width: 70%;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+#noise {
+  position: absolute;
+  height: 100%;
+}

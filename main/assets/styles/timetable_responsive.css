@@ -1,0 +1,466 @@
+@media only screen and (max-width: 1270px) {
+  section.timetable .carousel-item > div {
+    grid-template-columns: 1fr;
+    grid-template-rows: 130px 420px 130px 420px;
+    grid-template-areas: "ticket-head1" "ticket-body1" "ticket-head2" "ticket-body2";
+  }
+  section.timetable .ticket-head2 {
+    margin-top: -2px;
+  }
+  .ticket-body .coming-soon {
+    font-size: 6.6rem;
+  }
+  .ticket-body .coming-soon > div {
+    line-height: 106px;
+  }
+  .ticket-body .free-pass {
+    font-size: 5.3rem;
+  }
+  .ticket-body2 > .bintang {
+    width: 400px;
+  }
+  .ticket-head h4 {
+    font-size: 57.79px;
+  }
+  .ticket-head h4.head-small {
+    font-size: 54.79px;
+  }
+  .ticket-body .free-pass {
+    font-size: 73.6px;
+  }
+  .ticket-body .coming-soon {
+    font-size: 80px;
+  }
+  .ticket-body1 > div .ticket-section > .title {
+    font-size: 34px;
+    line-height: 45px;
+  }
+  .ticket-name > .title + div, .ticket-location > .title + div {
+    font-size: 40px;
+    line-height: 51px;
+  }
+  .ticket-location > :last-child {
+    font-size: 33.6px;
+    line-height: 41.6px;
+  }
+  .ticket-date > .title + div, .ticket-time > .title + div {
+    font-size: 56px;
+    line-height: 56px;
+  }
+  .ticket-date > :last-child, .ticket-time > :last-child {
+    font-size: 72px;
+    line-height: 88px;
+  }
+  .ticket-code .code {
+    margin-bottom: 16px;
+  }
+
+  /* badan ticket kanan */
+  /* mtj */
+  .mtj__body > :first-child {
+    font-size: clamp(1rem, calc(1rem + 3.2vw), 2rem);
+  }
+  .mtj__body > :nth-child(2) {
+    font-size: clamp(0rem, calc(1.3rem + 3.6vw), 2.8rem);
+  }
+  
+  .mtj__body li {
+    font-size: clamp(1rem, calc(1rem + 1vw), 1.6rem);
+  }
+  .mtj__body > :last-child {
+    font-size: clamp(1rem, calc(1rem + 3.2vw), 2rem);
+  }
+  .mtj__body > :last-child .symbol {
+    font-size: clamp(1rem, calc(1rem + 3.2vw), 2.4rem);
+  }
+
+  /* ctwo */
+  .ctwo__body > * {
+    width: 70%;
+  }
+
+  .ctwo__body .category {
+    font-size: clamp(1rem, calc(.6rem + 1.4vw), 2rem);
+  }
+
+  .ctwo__body .speaker-mentor {
+    font-size: clamp(1rem, calc(.5rem + 1.2vw), 2rem);
+  }
+  .ctwo__body .title-subtitle > :first-child {
+    font-size: clamp(1rem, calc(.8rem + 2.4vw), 2.3rem);
+  }
+
+  /* wo */
+  .wo__body .title-subtitle > :last-child {
+    font-size: clamp(1rem, calc(2.4rem + 2.5vw), 5rem);
+  }
+
+  /* ct1 */
+  .ct1__body .title-subtitle > :not(:first-child), .ct1__body .title-subtitle > :first-child {
+    font-size: clamp(1rem, calc(2rem + 2vw), 10rem);
+  }
+
+
+}
+@media only screen and (max-width: 768px) {
+  section.timetable > h2 {
+    font-size: 7vw;
+    padding-inline: 24px;
+    margin-bottom: 24px;
+  }
+  section.timetable .carousel-item > div {
+    grid-template-rows: 92px 360px 92px 360px;
+  }
+  .ticket-head h4, .ticket-head h4.head-small {
+    font-size: 2.8rem;
+  }
+  .ticket-body1 > div {
+    grid-template-columns: 140px 1fr 1fr;
+  }
+  .ticket-body2 > .bintang {
+    width: 320px;
+  }
+  .ticket-body .coming-soon {
+    font-size: 5rem;
+  }
+  .ticket-body .coming-soon > div {
+    line-height: 86px;
+  }
+  .ticket-body1 > div {
+    padding-top: 16px;
+    height: calc(100% - 16px);
+  }
+  .ticket-body1 > div .ticket-section > .title {
+    font-size: 1.7rem;
+    line-height: 2.1rem;
+  }
+  .ticket-code .code {
+    margin-bottom: 16px;
+    margin-left: 6px;
+  }
+  .ticket-code .code > :first-child {
+    font-size: 2rem;
+  }
+  .ticket-code .code > :last-child {
+    font-size: 2.2rem;
+    line-height: 1.4rem;
+  }
+  .ticket-code .bintang > img {
+    width: 65%;
+  }
+  .ticket-name > .title + div, .ticket-location > .title + div {
+    font-size: 2.3rem;
+    line-height: 2.6rem;
+  }
+  .ticket-location > :last-child {
+    font-size: 2.1rem;
+    line-height: 32px;
+  }
+  .ticket-date > .title + div, .ticket-time > .title + div {
+    font-size: 2.9rem;
+    line-height: 46px;
+  }
+  .ticket-date > :last-child, .ticket-time > :last-child {
+    font-size: 3.8rem;
+    line-height: 4.7rem;
+  }
+  .ticket-date > :last-child sup, .ticket-time > :last-child sup {
+    font-size: 2.4rem;
+  }
+
+  /* badan ticket kanan */
+  /* mtj */
+  .mtj__body > :nth-child(2) {
+    margin-bottom: .3rem;
+  }
+  .mtj__body ul {
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (max-width: 624px) {
+  section.timetable h2 {
+    margin-bottom: 20px;
+  }
+  section.timetable .carousel {
+    margin-block: 42px;
+  }
+  section.timetable .carousel-item > div {
+    grid-template-rows: 80px 320px 80px 320px;
+  }
+  .ticket-head h4, .ticket-head h4.head-small {
+    font-size: 2.4rem;
+  }
+  .ticket-body1 > div {
+    grid-template-columns: 110px 1fr 1fr;
+  }
+  .ticket-body2 > .bintang {
+    width: 290px;
+  }
+  .ticket-body1 > div {
+    padding-top: 16px;
+    height: calc(100% - 16px);
+  }
+  .ticket-body1 > div .ticket-section > .title {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+  .ticket-code .bintang > img {
+    width: 57%;
+  }
+  .ticket-code .code {
+    margin-bottom: 26px;
+    margin-left: 14px;
+  }
+  .ticket-code .code > :first-child {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    letter-spacing: .18rem;
+  }
+  .ticket-code .code > :last-child {
+    font-size: 1.75rem;
+    line-height: 1.4rem;
+    letter-spacing: .43rem;
+  }
+  .ticket-name > .title + div, .ticket-location > .title + div {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+  }
+  .ticket-location > :last-child {
+    font-size: 1.7rem;
+  }
+  .ticket-date > .title + div, .ticket-time > .title + div {
+    font-size: 2.5rem;
+    line-height: 2.6rem;
+  }
+  .ticket-date > :last-child, .ticket-time > :last-child {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+  .ticket-date > :last-child sup, .ticket-time > :last-child sup {
+    font-size: 2.1rem;
+  }
+
+  .ctwo__body {
+    margin-bottom: 2rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  section.timetable > h2 {
+    font-size: 7vw;
+    padding-inline: 24px;
+    margin-bottom: 0;
+  }
+  section.timetable .carousel-item > div {
+    grid-template-rows: 64px 230px 64px 230px;
+  }
+  .ticket-head h4, .ticket-head h4.head-small {
+    font-size: 2rem;
+  }
+  .ticket-head .pipe {
+    margin-inline: 8px;
+  }
+  .ticket-body1 > div {
+    grid-template-columns: 64px 1fr 1fr;
+  }
+  .ticket-body2 > .bintang {
+    width: 210px;
+  }
+  .ticket-body .coming-soon {
+    font-size: 3.6rem;
+  }
+  .ticket-body .coming-soon > div {
+    line-height: 64px;
+  }
+  .ticket-body .free-pass {
+    font-size: 3.4rem;
+  }
+  .ticket-body1 > div {
+    padding-top: 14px;
+  }
+  .ticket-body1 > div .ticket-section > .title {
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+  }
+  .ticket-code .code {
+    margin-bottom: 6px;
+    margin-left: 12px;
+  }
+  .ticket-code .code > :first-child {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.2rem;
+  }
+  .ticket-code .code > :last-child {
+    font-size: 1.27rem;
+    line-height: 1rem;
+    letter-spacing: 0.42rem;
+  }
+  .ticket-name > .title + div, .ticket-location > .title + div {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .ticket-location > :last-child {
+    font-size: 1.5rem;
+    line-height: 22px;
+  }
+  .ticket-date > .title + div, .ticket-time > .title + div {
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+  }
+  .ticket-date > :last-child, .ticket-time > :last-child {
+    font-size: 2.8rem;
+    line-height: 3.3rem;
+  }
+  .ticket-date > :last-child sup, .ticket-time > :last-child sup {
+    font-size: 2rem;
+  }
+
+  /* badan ticket kanan */
+  .ticket-body2.not-stamp > div {
+    padding-top: 16px;
+  }
+
+  .ctwo__body > * {
+    width: 220px;
+  }
+  
+
+  .ctwo__body .category {
+    font-size: clamp(1rem, calc(.7rem + 1.2vw), 2rem);
+  }
+
+  /* mtj */
+  .mtj__body > :first-child {
+    font-size: clamp(1rem, calc(.7rem + 2.2vw), 2rem);
+    line-height: 1;
+  }
+  .mtj__body > :nth-child(2) {
+    font-size: clamp(0rem, calc(1.1rem + 2.7vw), 2.8rem);
+  }
+  
+  .mtj__body li {
+    font-size: clamp(.5rem, calc(.6rem + 2vw), 1.6rem);
+    margin-bottom: 0;
+  }
+  .mtj__body > :last-child {
+    font-size: clamp(1rem, calc(.7rem + 2.2vw), 2rem);
+  }
+  .mtj__body > :last-child .symbol {
+    font-size: clamp(1rem, calc(.8rem + 2.5vw), 2.4rem);
+  }
+  .mtj__body > :nth-child(2) {
+    margin-bottom: .1rem;
+  }
+  .mtj__body ul {
+    margin-bottom: .5rem;
+  }
+
+  /* ct */
+  .ct1__body .title-subtitle > :not(:first-child), .ct1__body .title-subtitle > :first-child {
+    line-height: 1;
+  }
+  .ct2__body .title-subtitle > :first-child {
+    margin-top: 0;
+  }
+
+  .ct2__body .speaker-mentor {
+    margin-top: 0;
+  }
+
+  .ct2__body .title-subtitle {
+    margin-bottom: 4px;
+  }
+
+  .ct2__body .title-subtitle > :not(:first-child) {
+    font-size: clamp(1rem, calc(1.5rem + 1.4vw), 10rem);
+  } 
+
+  
+
+
+}
+@media only screen and (max-width: 400px) {
+  section.timetable > h2 {
+    font-size: 7vw;
+    padding-inline: 16px;
+    margin-bottom: 0px;
+  }
+  section.timetable .carousel {
+    margin-block: 24px;
+  }
+  section.timetable .carousel-item > div {
+    grid-template-rows: 60px 190px 60px 190px;
+  }
+  .ticket-head {
+    padding-inline: 1rem;
+  }
+  .ticket-head h4, .ticket-head h4.head-small {
+    font-size: 1.7rem;
+  }
+  .ticket-body1 > div {
+    grid-template-columns: 52px 1fr 1fr;
+  }
+  .ticket-body2 > .bintang {
+    width: 170px;
+  }
+  .ticket-body .coming-soon {
+    font-size: 3.2rem;
+  }
+  .ticket-body .coming-soon > div {
+    line-height: 56px;
+  }
+  .ticket-body .free-pass {
+    font-size: 2.9rem;
+  }
+  .ticket-body1 > div {
+    padding-top: 10px;
+  }
+  .ticket-body1 > div .ticket-section > .title {
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+  }
+  .ticket-code .bintang > img {
+    width: 50%;
+  }
+  .ticket-code .code {
+    margin-bottom: 12px;
+    margin-left: 11px;
+  }
+  .ticket-code .code > :first-child {
+    font-size: 1rem;
+    line-height: 0.9rem;
+    letter-spacing: 0.137rem;
+  }
+  .ticket-code .code > :last-child {
+    font-size: 1rem;
+    line-height: 0.9rem;
+    letter-spacing: 0.34rem;
+  }
+  .ticket-name > .title + div, .ticket-location > .title + div {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+  .ticket-location > :last-child {
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+  }
+  .ticket-date > .title + div, .ticket-time > .title + div {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+  .ticket-date > :last-child, .ticket-time > :last-child {
+    font-size: 2rem;
+    line-height: 2.6rem;
+  }
+  .ticket-date > :last-child sup, .ticket-time > :last-child sup {
+    font-size: 1.2rem;
+  }
+
+  /* badan ticket kanan */
+  .ticket-body2.not-stamp > div {
+    padding-top: 4px;
+  }
+  .ctwo__body {
+    margin-bottom: 1rem;
+  }
+}

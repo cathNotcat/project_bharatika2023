@@ -1,0 +1,103 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.carousel-wrapper{
+  display: flex;
+  position: relative;
+  /* height: calc(100vh - 70px); */
+  height: 100vh;
+}
+.carousel-wrapper i{
+  top: 50%;
+  height: 32px;
+  width: 32px;
+  color: gray;
+  cursor: pointer;
+  font-size: 19px;
+  position: absolute;
+  text-align: center;
+  line-height: 34px;
+  background: #ffffff99;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.carousel-wrapper i:active{
+  transform: translateY(-50%) scale(0.9);
+}
+.carousel-wrapper i:hover{
+  background: #f2f2f2;
+}
+.carousel-wrapper i:first-child{
+  left: 22px;
+  display: none;
+  z-index: 1;
+}
+.carousel-wrapper i:last-child{
+  right: 22px;
+}
+.carousel-wrapper .event-carousel{
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+.event-carousel.dragging{
+  cursor: grab;
+  scroll-behavior: auto;
+}
+
+.event-carousel.dragging .car-page{
+  pointer-events: none;
+}
+.event-carousel .car-page{
+  /* height: 100vh; */
+  object-fit: cover;
+  user-select: none;
+  /* width: calc(100% / 3); */
+}
+.event-carousel .car-page:first-child{
+  margin-left: 0px;
+}
+
+@media screen and (max-width: 900px) {
+  .event-carousel .car-page{
+    /* width: calc(100% / 2); */
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .event-carousel .car-page{
+    /* width: 100%; */
+  }
+}
+.event-carousel .page{
+  height: 100vh - 70px;
+  height: 100vh;
+  width: 90%;
+  background-color: red;
+  margin-right: 10px;
+
+}
+
+.car-page{
+  display: inline-flex;
+  /* background-color: magenta;  */
+  /* border: 1px solid black; */
+  border: none;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  overflow: hidden;
+
+}
+
+@media(max-width:687px){ /* ukuran hp dsb */
+  .carousel-wrapper{
+    height: 100vh;
+  }
+}

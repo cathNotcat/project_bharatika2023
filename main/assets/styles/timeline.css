@@ -1,0 +1,402 @@
+@font-face{
+    font-family : "BaseNeue";
+    font-weight : medium;
+    src: url("../fonts/BaseNeueTrial-CondensedMedium.woff2");
+}
+@font-face{
+    font-family: "workSans";
+    font-weight: normal;
+    src: url("../fonts/WorkSans-Regular.ttf");
+}
+/* .bg-noise{
+    background: url(assets/img/noise\ overlay.jpg);
+    z-index: -4;
+    position:relative;
+} */
+.bg-full {
+    height: 4900px;
+    width:100%;
+    position: relative;
+    overflow: hidden;
+    background: rgb(70,24,74);
+    background: linear-gradient(180deg, rgba(70,24,74,1) 7%, rgba(57,41,97,1) 19%, rgba(46,55,118,1) 27%, rgba(35,69,138,1) 36%, rgba(11,100,180,1) 49%, rgba(25,111,168,1) 61%, rgba(43,126,152,1) 72%, rgba(72,150,126,1) 87%, rgba(114,175,84,1) 100%);
+    z-index: -4;
+    /* mix-blend-mode: overlay; */
+    
+}
+.text-timeline {
+    position: absolute;
+    text-transform: uppercase;
+    color : #fff8d6;
+    align-items:start;
+    z-index:2;
+}
+.cond-bold{
+    font-family:"BaseNeue";
+    font-weight: bold;
+}
+.cond-med{
+    font-family: "baseNeue";
+    font-weight: medium;
+}
+.work-reg{
+    font-family: "workSans";
+    font-weight: normal;
+}
+#timeline-head{
+    position: absolute;
+    top : 80px;
+    left : 50px;
+    z-index : 2;
+}
+.text-timeline>h1{
+    font-size:60pt;
+    margin-bottom:0;
+}
+.text-timeline>h2{
+    font-size:48pt;
+    margin-bottom:0;
+}
+h1>br{
+    display : none;
+}
+#circle-timeline{
+    position: absolute;
+    opacity: 50%;
+    top : -180px;
+    left: -300px;
+    width : 900px;
+}
+#garis{
+    position: absolute;
+    top : 410px;
+    left : 200px;
+    z-index:2;
+}
+/* #hiasGaris{
+    width:20px;
+    top:0;
+    position : fixed;
+} */
+#bulet{
+    position:fixed;
+    top : 410px;
+    left: 190px;
+    z-index:2;
+}
+#time1{
+    top : 350px;
+    left: 290px;
+}
+
+#time2{
+    top: 925px;
+    left:290px;
+}
+#prism2-time{
+    position : absolute;
+    opacity : 70%;
+    left: 1200px;
+    top: 920px;
+    height: 580px;
+    transform : rotate(-34deg);
+}
+#prism1-time{
+    position : absolute;
+    opacity : 100%;
+    left: 1350px;
+    top: 1240px;
+    height:400px;
+    transform: rotate(-55deg);
+}
+
+#time3{
+    top: 1500px;
+    left:290px;
+}
+
+#time4{
+    top: 2075px;
+    left:290px;
+}
+#half-time{
+    position: absolute;
+    z-index: 2;
+    opacity: 80%;
+    top: 2290px;
+    left : -160px;
+    height: 400px;
+    transform: rotate(130deg);
+}
+#some-time{
+    position:absolute;
+    z-index:0;
+    opacity: 30%;
+    top:3090px;
+    left: 300px;
+    height:500px;
+    transform: rotate(-155deg);
+}
+#bubble-time{
+    position: absolute;
+    opacity : 50%;
+    top: 2180px;
+    left: -620px;
+    height:1600px;
+}
+
+#time5{
+    top: 2650px;
+    left:290px;
+}
+
+#time6{
+    top: 3225px;
+    left:290px;
+}
+
+#time7{
+    top: 3800px;
+    left:290px;
+}
+#prism6-time{
+    position : absolute;
+    top: 3800px;
+    height:1000px;
+    left: 1290px;
+    transform: rotate(-32deg);
+}
+
+#time8{
+    top: 4380px;
+    left:290px;
+}
+#garis2{
+    opacity:0;
+    position:absolute;
+}
+#noise{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+@media (max-width:576px){
+    .bg-full{
+        height:2100px;
+    }
+    #timeline-head{
+        width: 350px;
+        top:30px;
+        left:15px;
+    }
+    #circle-timeline{
+        width:300px;
+        top:-48px;
+        left:-88px;
+    }
+    .text-timeline>h1{
+        font-size:30pt;
+    }
+    h1>br{
+        display:block;
+    }
+    .text-timeline>h2{
+        font-size:18pt;
+    }
+    .bulet-time{
+        height:20px;
+    }
+    #garis{
+        width:10px;
+        top: 170px;
+        left: 40px;
+    }
+    #bulet{
+        top:170px;
+        left:35px;
+    }
+    #time1{
+        top:130px;
+        left:70px;
+    }
+
+    #time2{
+        top:390px;
+        left:70px;
+    }
+    #prism1-time{
+        top:524px;
+        height:150px;
+        left:280px;
+    }
+    #prism2-time{
+        top:390px;
+        height:250px;
+        left:250px;
+    }
+
+    #time3{
+        top:640px;
+        left:70px;
+    }
+
+    #time4{
+        top:880px;
+        left:70px;
+    }
+    #half-time{
+        top:1050px;
+        height:100px;
+        left:-40px;
+    }
+    #bubble-time{
+        top:1000px;
+        height:600px;
+        left:-280px;
+    }
+    #some-time{
+        top:1350px;
+        height:180px;
+        left:60px;
+    }
+
+    #time5{
+        top:1120px;
+        left:70px;
+    }
+
+    #time6{
+        top:1390px;
+        left:70px;
+    }
+
+    #time7{
+        top:1630px;
+        left:70px;
+    }
+    #prism6-time{
+        top:1700px;
+        left:300px;
+        height:300px;
+        opacity:79%;
+    }
+
+    #time8{
+        top:1850px;
+        left:70px;
+    }
+    #garis2{
+        opacity:1;
+        width:10px;
+        top: 390px;
+        left: 40px;
+    }
+}
+@media (min-width:577px) and (max-width:992px){
+    .bg-full{
+        height:3800px;
+    }
+    #timeline-head{
+        width: 500px;
+        top:40px;
+        left:30px;
+    }
+    #circle-timeline{
+        width:500px;
+        top:-88px;
+        left:-155px;
+    }
+    .text-timeline>h1{
+        font-size:45pt;
+    }
+    .text-timeline>h2{
+        font-size:33pt;
+    }
+    .bulet-time{
+        height:30px;
+    }
+    #garis{
+        width:20px;
+        top: 250px;
+        left: 50px;
+    }
+    #bulet{
+        top:250px;
+        left:46px;
+    }
+    #time1{
+        top:205px;
+        left:95px;
+    }
+
+    #time2{
+        top:665px;
+        left:95px;
+    }
+    #prism1-time{
+        top:1000px;
+        height:200px;
+        left:630px;
+    }
+    #prism2-time{
+        top:550px;
+        height:600px;
+        left:480px;
+    }
+
+    #time3{
+        top:1125px;
+        left:95px;
+    }
+    #time4{
+        top:1585px;
+        left:95px;
+    }
+    #half-time{
+        top:1860px;
+        height:300px;
+        left:-120px;
+        z-index:1;
+    }
+    #bubble-time{
+        top:1800px;
+        height:1000px;
+        left:-380px;
+    }
+    #some-time{
+        top:2350px;
+        height:350px;
+        left:140px;
+    }
+
+    #time5{
+        top:2045px;
+        left:95px;
+    }
+    #time6{
+        top:2505px;
+        left:95px;
+    }
+    #time7{
+        top:2965px;
+        left:95px;
+    }
+    #prism6-time{
+        top:2800px;
+        left:750px;
+        height:600px;
+        opacity:79%;
+    }
+    #time8{
+        top:3425px;
+        left:95px;
+    }
+    #garis2{
+        opacity:1;
+        width:20px;
+        top: 470px;
+        left: 50px;
+    }
+}

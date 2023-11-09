@@ -1,0 +1,82 @@
+body{
+    background: linear-gradient(to right, #46184a, #0c1a27);
+    height: 100vh;
+}
+.modal-backdrop {
+    background-color:transparent;
+ }
+ .modal-content{
+    align-items: center;
+    width: 400px;
+ }
+ .modal-dialog-centered {
+    justify-content: center;
+ }
+ @media screen and (max-width: 420px){
+    .modal-content {
+        width: 90%;
+    }
+ }
+ .tulisan{
+    width:100%;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .login-g-recaptcha{
+    margin-inline:6%;
+ }
+ .input-wrapper{
+   margin: auto;
+   margin-top: 30px;
+   margin-bottom: 30px;
+ }
+ .modal-footer{
+   margin-left: 20px;
+   margin-right: 20px;
+   flex-wrap: wrap-reverse;
+ }
+ #emailHelp{
+   margin-top: -20px;
+   margin-bottom: 10px;
+ }
+ .btn-primary{
+   width: 100%;
+   padding: 8px;
+   border-radius: 10px;
+   height: 40px;
+   border: none;
+   outline: none;
+   font-size: 1em;
+   transition: 0.5s;
+   background: linear-gradient(to right, #401f55, #374c71, #5d9b62);
+   color: white;
+ }
+ .modal-footer1 .input-wrapper,.modal-footer .input-wrapper{
+   width: auto;
+ }
+ .btn-primary{
+   width: 100%;
+   padding: 8px;
+   border-radius: 10px;
+   height: 40px;
+   border: none;
+   outline: none;
+   font-size: 1em;
+   transition: 0.5s;
+   background: linear-gradient(to right, #401f55, #5d9b62);
+   color: white;
+   height: 40px;
+ }
+ .spinner-border{
+   margin:auto;
+ }
+ .back-wrapper{
+   width: auto;
+   padding: 3px;
+   border-radius: 10px;
+   background: linear-gradient(to bottom right, #e7827c, #3d1c47);
+ }
+ p{
+   color: white;
+ }

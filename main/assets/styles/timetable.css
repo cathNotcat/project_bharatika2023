@@ -1,0 +1,513 @@
+@font-face {
+  font-family: "BaseNeueCondBold";
+  src: url("../fonts/BaseNeueTrial-CondensedBold.woff2") format("woff2"), url("../fonts/BaseNeueTrial-CondensedBold.otf") format("opentype"); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "BaseNeueCondBoldObl";
+  src: url("../fonts/BaseNeueTrial-CondBoldObliq.woff2") format("woff2"), url("../fonts/BaseNeueTrial-CondBoldObliq.otf") format("opentype"); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "BaseNeueCondMed";
+  src: url("../fonts/BaseNeueTrial-CondensedMedium.woff2") format("woff2"), url("../fonts/BaseNeueTrial-CondensedMedium.otf") format("opentype"); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "BaseNeueMedium";
+  src: url("../fonts/BaseNeueTrial-Medium.woff2") format("woff2"), url("../fonts/BaseNeueTrial-Medium.otf") format("opentype"); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "BaseNeueCond";
+  src: url("../fonts/BaseNeueTrial-Condensed.woff2") format("woff2"), url("../fonts/BaseNeueTrial-Condensed.otf") format("opentype"); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "BaseNeueCondExtBdObliq";
+  src: url("../fonts/BaseNeueTrial-CondExtBdObliq.woff2") format("woff2"), url("../fonts/BaseNeueTrial-CondExtBdObliq.otf") format("opentype"); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "BaseNeueCondSemBd";
+  src: url("../fonts/BaseNeueTrial-CondSemBd.woff2") format("woff2"), url("../fonts/BaseNeueTrial-CondSemBd.otf") format("opentype"); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "BaseNeueCondSemBdObliq";
+  src: url("../fonts/BaseNeueTrial-CondSemBdObliq.woff2") format("woff2"), url("../fonts/BaseNeueTrial-CondSemBdObliq.otf") format("opentype"); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'WorkSansBold';
+  src: url('../fonts/WorkSans-Bold.ttf');
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: 'WorkSansMediumItalic';
+  src: url('../fonts/WorkSans-MediumItalic.ttf');
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: 'WorkSansMedium';
+  src: url('../fonts/WorkSans-Medium.ttf');
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+section.timetable {
+  background: linear-gradient(25deg, #46184a 25%, #0b64B4 55%, rgb(141, 192, 55) 99%);
+  padding-top: 48px;
+  padding-bottom: 12px;
+  position: relative;
+}
+section.timetable h2 {
+  padding-inline: 48px;
+  font-family: "BaseNeueCondBold";
+  color: #fff8d6;
+  font-size: 60px;
+  margin-bottom: 42px;
+}
+section.timetable h2 span {
+  font-family: "BaseNeueCondBoldObl";
+}
+section.timetable .carousel {
+  margin-block: 64px;
+}
+section.timetable .carousel-item > div {
+  color: #0b1926;
+  padding-block: 3px;
+  display: grid;
+  min-height: 37.5vw;
+  grid-template-columns: auto calc(8.48px + 32vw);
+  grid-template-rows: calc(37.84px + 6vw) auto;
+  grid-template-areas: "ticket-head1 ticket-head2" "ticket-body1 ticket-body2";
+}
+section.timetable .carousel-item > div > * {
+  border: 3px solid black;
+}
+section.timetable .ticket-head1 {
+  grid-area: ticket-head1;
+}
+section.timetable .ticket-head2 {
+  grid-area: ticket-head2;
+}
+section.timetable .ticket-body1 {
+  grid-area: ticket-body1;
+}
+section.timetable .ticket-body2 {
+  grid-area: ticket-body2;
+}
+
+.ticket-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(95deg, rgb(246, 135, 123) 30%, rgb(255, 248, 214) 130%);
+  border-top-right-radius: 35px;
+  padding-inline: 3rem;
+}
+.ticket-head:nth-child(2) {
+  background: linear-gradient(95deg, rgb(246, 135, 123) -200%, rgb(255, 248, 214) 100%);
+  border-top-left-radius: 35px;
+  margin-left: -3px;
+}
+.ticket-head1 {
+  justify-content: start;
+}
+.ticket-head h4 {
+  font-family: "BaseNeueCondBold";
+  margin: 0;
+  font-size: calc(2.2vw + 24px);
+}
+.ticket-head h4.head-small {
+  font-size: calc(2.2vw + 21px);
+}
+.head-small span{
+  font-family: 'WorkSansBold';
+}
+.ticket-head .pipe {
+  position: relative;
+  top: 6%;
+  width: 3px;
+  background-color: black;
+  height: 50%;
+  margin-inline: 14px;
+}
+
+.ticket-body {
+  background-color: #fff8d6;
+  border-bottom-right-radius: 35px;
+  margin-top: -3px;
+}
+.ticket-body:nth-child(4) {
+  border-bottom-left-radius: 35px;
+  margin-left: -3px;
+}
+.ticket-body2 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.ticket-body2 > * {
+  grid-column: 1/span 1;
+  grid-row: 1/span 1;
+}
+.ticket-body2 .bintang {
+  justify-self: center;
+  display: block;
+  width: 70%;
+  opacity: 0.15;
+  filter: grayscale(100%);
+}
+.ticket-body2 > :last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "BaseNeueCondBold";
+  position: relative;
+  z-index: 10;
+}
+.ticket-body .free-pass, .ticket-body .coming-soon {
+  border: 6px solid black;
+  text-align: center;
+}
+.ticket-body .free-pass {
+  padding-inline: 1.3rem;
+  position: relative;
+  rotate: 340deg;
+  font-size: calc(12.16px + 4vw);
+}
+.ticket-body .coming-soon {
+  font-size: calc(4vw + 18.56px);
+  padding-inline: 0.8rem;
+}
+.ticket-body .coming-soon > div {
+  line-height: 96px;
+}
+
+.ticket-body1 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.ticket-body1 > * {
+  grid-column: 1/span 1;
+  grid-row: 1/span 1;
+}
+.ticket-body1 .melaju {
+  display: block;
+  justify-self: center;
+  max-width: 73%;
+  filter: grayscale(100%);
+  opacity: 0.15;
+}
+.ticket-body1 > div {
+  display: grid;
+  grid-template-columns: 180px 1fr 1fr;
+  grid-template-rows: 6fr 9fr;
+  grid-template-areas: "code name location" "code date time";
+  height: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.ticket-body > div {
+  padding-top: 2.48vw;
+}
+
+.ticket-code {
+  grid-area: code;
+  grid-row: 1/span 2;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: 1fr 4fr;
+}
+.ticket-code .code {
+  writing-mode: vertical-rl;
+  rotate: 180deg;
+  margin-bottom: calc(16px + 76.8px - 5vw);
+}
+.ticket-code .code > :first-child {
+  font-family: "BaseNeueCond";
+  font-size: 2.2rem;
+  letter-spacing: 0.28rem;
+  line-height: 36px;
+}
+.ticket-code .code > :last-child {
+  font-family: "BaseNeueCondMed";
+  font-size: 2.5rem;
+  letter-spacing: 0.6rem;
+  line-height: 36px;
+}
+.ticket-code .bintang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ticket-code .bintang > img {
+  display: block;
+  width: 80%;
+  position: relative;
+  right: 5.8%;
+}
+.ticket-body1 > div .ticket-section > .title {
+  font-size: calc(1vw + 18.64px);
+  line-height: calc(2.5vw + 6.6px);
+  font-family: "BaseNeueCond";
+}
+
+.ticket-name > .title + div, .ticket-location > .title + div {
+  font-family: "BaseNeueCondBold";
+  font-size: calc(1vw + 24.64px);
+  line-height: calc(2vw + 20.28px);
+}
+
+.ticket-name {
+  grid-area: name;
+}
+
+.ticket-location {
+  grid-area: location;
+}
+.ticket-location > :last-child {
+  font-family: "BaseNeueCond";
+  font-size: calc(26.24px + 1vw);
+  line-height: calc(18.24px + 1vw);
+}
+
+.ticket-date > .title + div, .ticket-time > .title + div {
+  font-family: "BaseNeueCondMed";
+  font-size: calc(37.568px + 1.2vw);
+  line-height: calc(40.64px + 1vw);
+}
+.ticket-date > :last-child, .ticket-time > :last-child {
+  font-family: "BaseNeueCondBold";
+  font-size: calc(53.568px + 1.2vw);
+  line-height: calc(64.96px + 1.5vw);
+}
+.ticket-date > :last-child sup, .ticket-time > :last-child sup {
+  font-family: "BaseNeueCond";
+  position: relative;
+  font-size: 2.8rem;
+}
+
+.ticket-date {
+  grid-area: date;
+}
+
+.ticket-time {
+  grid-area: time;
+}
+
+section.timetable .carousel-control-next {
+  position: static;
+  opacity: 1;
+  height: 50%;
+}
+section.timetable .carousel-control-next:hover {
+  opacity: 0.8;
+}
+section.timetable .carousel-control-next > img {
+  display: block;
+  height: 80%;
+}
+.timetable > svg {
+  position: absolute;
+  inset: 0;
+}
+
+/* badan ticket kanan */
+/* mtj */
+
+.ticket-body2.not-stamp > :last-child {
+  height: 100%;
+  align-items: initial;
+}
+
+.mtj__body ul {
+  list-style: none;
+}
+
+.mtj__body > :first-child {
+  font-family: 'BaseNeueCondSemBd';
+  line-height: 2.3rem;
+  font-size: clamp(1rem, 2.64vw, 2.4rem);  
+}
+
+.mtj__body > :nth-child(2) {
+  font-family: 'BaseNeueCondExtBdObliq';
+  font-size: clamp(1rem, 3.54vw, 3.2rem);
+  margin-bottom: .8rem;
+}
+
+.mtj__body ul {
+  padding: 0;
+  margin-bottom: 1.4rem;
+}
+
+.mtj__body li {
+  font-family: 'BaseNeueCondBold';
+  font-size: clamp(1rem, 2vw, 1.8rem);
+  margin-bottom: .3rem;
+}
+
+.mtj__body li > span {
+  font-family: 'BaseNeueCondMed';
+}
+
+.mtj__body li .tanda-baca {
+  font-family: 'WorkSansMedium';
+}
+
+.mtj__body > :last-child {
+  font-family: 'BaseNeueCondSemBdObliq';
+  font-size: clamp(1rem, 2.65vw, 2.4rem);
+}
+
+.mtj__body > :last-child .symbol {
+  font-family: 'WorkSansMediumItalic';
+  font-style: oblique;
+  font-size: clamp(1rem, 2.85vw, 2.5rem);
+}
+
+.mtj__body li::before {
+  content: '';
+  background-image: url('../img/arrow-04.png');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  padding-left: 2.2vw;
+  background-position-y: center;
+}
+
+/* ctwo */
+.ctwo__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.ctwo__body > * {
+  width: 76%;
+}
+
+.ctwo__body .category {
+  font-family: 'BaseNeueCondSemBd';
+  font-size: clamp(.9rem, 1.7vw, 1.4rem);
+}
+
+.ctwo__body .title-subtitle {
+  font-family: 'BaseNeueCondBoldObl';
+  margin-bottom: .5rem;
+}
+
+.ctwo__body .title-subtitle > :first-child {
+  font-size: clamp(1rem, 2.9vw, 3rem);
+  line-height: 1;
+  margin-top: .4rem;
+}
+
+.ctwo__body .speaker-mentor {
+  font-family: 'BaseNeueMedium';
+  font-size: clamp(1rem, 1.7vw, 1.45rem);
+  margin-top: .4rem;
+}
+
+.ctwo__body .speaker-mentor span {
+  font-family: 'WorkSansMedium';
+}
+
+.ctwo__body .title-subtitle span {
+  font-family: 'WorkSansMediumItalic';
+}
+
+.ctwo__body img {
+  display: block;
+  width: 100%;
+}
+
+.ctwo__body img:hover {
+  content: url('../img/register-now-button-hover.png');
+}
+
+.ctwo__body img:active {
+  content: url('../img/register-now-button-clicked.png');
+}
+
+/* wo */
+.wo__body .title-subtitle > :not(:first-child) {
+  font-size: clamp(1rem, calc(2.5rem + 2vw), 10rem);
+  line-height: 1;
+}
+
+/* ct1 */
+.ct1__body .title-subtitle > :not(:first-child), .ct1__body .title-subtitle > :first-child {
+  font-size: clamp(1rem, calc(2rem + 2vw), 10rem);
+  line-height: 1.3;
+}
+.ct1__body .title-subtitle > :first-child {
+  margin-top: 0;
+}
+
+/* ct2 */
+.ct2__body .title-subtitle > :not(:first-child) {
+  font-size: clamp(1rem, calc(1.8rem + 1.4vw), 10rem);
+  line-height: 1;
+}
+
+.ct2__body .speaker-mentor {
+  line-height: 1.2;
+}
+
+
+/* warna kepala tiket */
+#carouselTimetableD1 .ticket-head {
+  background: linear-gradient(95deg, #dc0c22 -60%, #fbc037 45%);
+}
+#carouselTimetableD1 .ticket-head:nth-child(2) {
+  background: linear-gradient(95deg, #fbc037 35%, #f6877b 130%);
+}
+#carouselTimetableD2 .ticket-head {
+  background: linear-gradient(95deg, #dc0c22 -10%, #f6877b 25%, #fff8d6 260%);  
+}
+#carouselTimetableD2 .ticket-head:nth-child(2) {
+  background: linear-gradient(95deg, #f6877b -35%, #fff8d6 100%);
+}
+#carouselTimetableD3 .ticket-head {
+  background: linear-gradient(92deg, #dc0c22 18%, #fbc037 130%);
+}
+#carouselTimetableD3 .ticket-head:nth-child(2) {
+  background: linear-gradient(92deg, #dc0c22  -165%, #fbc037 65%);
+}

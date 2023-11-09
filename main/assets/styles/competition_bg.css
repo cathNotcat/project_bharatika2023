@@ -1,0 +1,233 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap'); */
+@font-face{
+    font-family : "BaseNeue";
+    font-weight : 300;
+    src: url("../fonts/BaseNeueTrial-Bold.ttf");
+}
+
+* {
+    /* top: 0;
+    left: 0; */
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+/* body {
+    background: url('../img/BG\ Tirta.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+} */
+
+.spinner {
+    position: absolute;
+    animation: scale 1.5s 0s linear;
+    animation-play-state:paused;
+    z-index: -10;
+    top:0;
+    left:-10vw;
+}
+
+.scaler {
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+    /* left: -10vw; */
+    animation: spin 50s infinite linear;
+    overflow: hidden;
+    /* width:146.91666666666666vw; */
+    width: 130vw;
+    height:auto;
+    /* z-index: -10; */
+}
+@media(max-width:767px){
+    .scaler{
+        width: 500vw;
+        height: auto;
+        top:-25vh;
+    }
+    .spinner{
+        top:-20vh;
+    }
+}
+@media(max-width:992px) and (min-width:768px){
+    .scaler{
+        width: 350vw;
+        height: auto;
+        top:-28vh;
+    }
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(.4) translateX(50%) rotate(0deg);
+    }
+
+    100% {
+        transform: scale(1) translateX(0) rotate(-360deg);
+    }
+}
+
+.row {
+    z-index: 10;
+    display: flex;
+}
+
+.col {
+    position: inherit;
+    width: 50%;
+}
+
+.compPar {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 8pt;
+    width: 200px;
+    position: absolute;
+    top: 31.01px;
+    left:4.17%;
+    padding-top: 0;
+}
+
+/* .col .row {
+    height: 650px; */
+    /* border: 1px solid black; */
+/* } */
+
+ul.menus li a {
+    font-family : "BaseNeue";
+    font-weight: 100;
+    text-decoration: none;
+    font-size: 20pt;
+    color: #fff8d6;
+    /* letter-spacing: -2px; */
+    transition: .3s ;
+}
+
+ul.menus li a:hover {
+    padding-right: 20px;
+}
+
+ul.menus li a.active {
+    font-size: 23pt;
+    color: #46184a;
+}
+.bot {
+    background-color: #fff;
+    height: 100px;
+    bottom: 0;
+    position:sticky;
+}
+
+#punggawa {
+    animation: 1s ease-in-out punggawa;
+    animation-play-state:paused;
+}
+#punggawa{
+    position:absolute;
+    top: 5vh;
+    left: 0;
+    width: 45%;
+    /* z-index: -1; */
+}
+@keyframes punggawa {
+    0% {
+        transform: translateY(50%);
+    }
+    80% {
+        transform: translateY(-5%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.main{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+.menus{
+    position: relative;
+    margin-right: 4%;
+    list-style: none;
+    text-align: end;
+    justify-self: flex-end;
+    margin-bottom: 50.75px;
+    z-index: 3;
+}
+@media(max-width:991px){
+    .menus{
+        right: 2.08%;
+    }
+}
+.compFirstPage{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+.left{
+    width: 43.75%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    z-index: 1;
+}
+.right{
+    width: 56.25%;
+    height: 100%;
+}
+@media(max-width:767px){
+    .right{
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .left{
+        width: 100%;
+        position: absolute;
+    }
+    #punggawa{
+        margin: auto;
+        width: 150%;
+        margin-top: 10vh;
+        left: -21%;
+    }
+}
+@media(max-width:992px) and (min-width:768px){
+    .right{
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .left{
+        width: 100%;
+        position: absolute;
+    }
+    #punggawa{
+        margin: auto;
+        width: 100%;
+    }
+}
+.main{
+    overflow: hidden;
+}
